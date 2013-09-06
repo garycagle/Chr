@@ -2,6 +2,8 @@ Chr::Application.routes.draw do
   get "static_pages/home"
   get "static_pages/aorb"
   get "static_pages/feedback"
+  get "static_pages/help"
+  get "static_pages/about"
   resources :events
 
   # The priority is based upon order of creation: first created -> highest priority.
