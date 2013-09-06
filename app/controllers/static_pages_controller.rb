@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-  	debugger
+  #	debugger
   end
 
   def aorb
