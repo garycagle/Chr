@@ -4,11 +4,15 @@ describe "StaticPages" do
 	describe "home page" do
 		it "should be titled Home" do
 			visit '/static_pages/home'
-			expect(page).to have_title('Home')
+			expect(page).to have_content('Chro_nose')
 		end
 		it "should  contain index" do
 			visit '/static_pages/home'
 			expect(page).to have_content('Index')
+		end
+		it "should not have custom label" do
+			visit '/static_pages/home'
+			expect(page).not_to have_title('Home')
 		end
 	end
 	describe "aorb page" do
