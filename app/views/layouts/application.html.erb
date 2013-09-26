@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>- <%= yield(:title) %></title>
+    <title>- <%= full_title(yield(:title))%></title>
 <!-- <head>
   <title>Chr</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
@@ -10,8 +10,9 @@
 </head> -->
 </head>
 <body>
-<%= link_to 'Index', events_path %>
-<%= link_to 'homw', 'static_pages/home' %>
+<%= link_to 'Events', events_path %>
+<%= link_to 'Home', home_path %>
+<%= link_to 'About', about_path %>
 <%= yield %>
 
 </body>
