@@ -7,7 +7,7 @@ describe "StaticPages" do
 	describe "home page" do
 		before{	visit home_path }
 
-		it {should have_content('Chro_nose')}
+		it {should have_content('history')}
 		it {should have_content('Index')}
 		it {should_not have_title('Home')}
 	end
