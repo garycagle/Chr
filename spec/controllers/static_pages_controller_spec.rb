@@ -9,9 +9,9 @@ describe StaticPagesController do
     end
   end
 
-  describe "GET 'aorb'" do
+  describe "GET 'challenge'" do
     it "returns http success" do
-      get 'aorb'
+      get 'challenge'
       response.should be_success
     end
   end
