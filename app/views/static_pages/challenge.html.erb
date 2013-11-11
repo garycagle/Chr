@@ -2,12 +2,12 @@
 
 <h1>Which event occurred first ?</h1>
 
-<p> a. <%= (@event[1]).detail %> </p>
-<p> b. <%= (@event[2]).detail %> </p>
+ <p> <%= link_to "a.", feedback_path, id: 'choice_a', class: "btn btn-large " %>
+  <%= (@event[1]).detail %> </p>
+  <p>  <%= link_to "b.", feedback_path, id: 'choice_b', class: "btn btn-large " %>
+ <%= (@event[2]).detail %> </p>
 
 <div>
-  <%= link_to "a.", feedback_path, id: 'choice_a', class: "btn btn-large btn-primary" %>
-   <%= link_to "b.", feedback_path, id: 'choice_b', class: "btn btn-large btn-primary" %>
 </div>
 <p/>
 <p/>
