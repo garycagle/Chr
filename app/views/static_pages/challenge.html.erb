@@ -1,0 +1,16 @@
+<% provide(:title, "challenge") %>
+
+<h1>Which event occurred first ?</h1>
+
+<p> a. <%= (@event[1]).detail %> </p>
+<p> b. <%= (@event[2]).detail %> </p>
+
+<div>
+  <%= link_to "a.", feedback_path, id: 'choice_a', class: "btn btn-large btn-primary" %>
+   <%= link_to "b.", feedback_path, id: 'choice_b', class: "btn btn-large btn-primary" %>
+</div>
+<p/>
+<p/>
+<p/>
+<p/>
+<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>

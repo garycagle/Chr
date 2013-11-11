@@ -1,0 +1,12 @@
+write class for problem context which can fetch event descriptions,detail and determine answer sequence...
+
+write utility to return n random record numbers from events file...does a select count(*) from events...
+   rails console --sandbox
+   Event.new,  Event.count
+   )
+
+
+
+
+
+
