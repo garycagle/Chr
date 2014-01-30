@@ -6,6 +6,9 @@
     Challenge your sense of history here!
   </h2>
 
+  <% session[:x] = 'x'%>
+  <% flash[:z] = 'z'%>
+
   <%= link_to "Get Started!", challenge_path, id: 'starter', class: "btn btn-large btn-primary" %>
 </div>
 <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>

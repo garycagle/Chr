@@ -1,8 +1,8 @@
 <% provide(:title, "challenge") %>
 
-<h1>Which event occurred first ?</h1>
-
- <p> <%= link_to "a.", feedback_path, id: 'choice_a', class: "btn btn-large " %>
+<h1>Which event occurred first ? <%=@event[3]%>  <%=flash[:z]%> </h1>
+<%= button_to "A", feedback_path, form_class: "response" %>
+ <p> <%= link_to "a.", feedback_path, id: 'choice_a', class: "btn btn-large ",data: { confirm: 'Are you sure?' } %>
   <%= (@event[1]).detail %> </p>
   <p>  <%= link_to "b.", feedback_path, id: 'choice_b', class: "btn btn-large " %>
  <%= (@event[2]).detail %> </p>
